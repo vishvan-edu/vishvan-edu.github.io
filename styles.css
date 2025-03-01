@@ -52,6 +52,13 @@ body {
     cursor: pointer;
   }
   
+  /* Show hamburger icon only in mobile view */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Show hamburger icon on mobile */
+    }
+  }
+  
   /* Navigation Menu */
   nav {
     display: flex;
