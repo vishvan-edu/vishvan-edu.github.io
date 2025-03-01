@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Bright Future Coaching</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for Hamburger Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Bright Future Coaching</a>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <!-- Navigation Menu -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about.html">About Us</a>
+          <ul class="dropdown">
+            <li><a href="about.html#mission">Our Mission</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="about.html#history">Our History</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="services.html#5th-8th">Classes 5th to 8th</a></li>
+            <li><a href="services.html#9th-10th">Classes 9th to 10th</a></li>
+            <li><a href="services.html#11th-12th">Classes 11th to 12th</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="courses.html">Courses</a>
+          <ul class="dropdown">
+            <li><a href="courses.html#math">JEE</a></li>
+            <li><a href="courses.html#science">NEET</a></li>
+            <li><a href="courses.html#english">CBSE Boards</a></li>
+            <li><a href="courses.html#english">UP Boards</a></li>
+            <li><a href="courses.html#english">ICSE Boards</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empowering Students for a Brighter Future</h1>
+    <p>Join the best coaching institute in UP for classes 5th to 12th.</p>
+    <a href="courses.html" class="cta-button">Explore Courses</a>
+  </section>
+
+  <section class="highlights">
+    <!-- Card 1 (Left) -->
+    <div class="highlight-item">
+      <div class="highlight-box">
+        <div class="image-container" onclick="openModal('images/hero-bg.png')">
+          <img src="images/hero-bg.png" alt="Experienced Faculty" class="card-image">
+        </div>
+      </div>
+      <div class="highlight-info">
+        <h3>Experienced Faculty</h3>
+        <p>Learn from the best teachers in the industry.</p>
+      </div>
+    </div>
+  
+    <!-- Card 2 (Right) -->
+    <div class="highlight-item reverse">
+      <div class="highlight-box">
+        <div class="image-container" onclick="openModal('images/hero-bg.png')">
+          <img src="images/hero-bg.png" alt="Personalized Attention" class="card-image">
+        </div>
+      </div>
+      <div class="highlight-info">
+        <h3>Personalized Attention</h3>
+        <p>Small batch sizes for individual focus.</p>
+      </div>
+    </div>
+  
+    <!-- Card 3 (Left) -->
+    <div class="highlight-item">
+      <div class="highlight-box">
+        <div class="image-container" onclick="openModal('images/hero-bg.png')">
+          <img src="images/hero-bg.png" alt="Proven Results" class="card-image">
+        </div>
+      </div>
+      <div class="highlight-info">
+        <h3>Proven Results</h3>
+        <p>95% pass rate in 2023.</p>
+      </div>
+    </div>
+  
+    <!-- Card 4 (Right) -->
+    <div class="highlight-item reverse">
+      
+      <div class="highlight-box">
+        <div class="image-container" onclick="openModal('images/hero-bg.png')">
+          <img src="images/hero-bg.png" alt="Comprehensive Study Material" class="card-image">
+        </div>
+      </div>
+      <div class="highlight-info">
+        <h3>Comprehensive Study Material</h3>
+        <p>Get access to high-quality study resources.</p>
+      </div>
+    </div>
+  
+    <!-- Card 5 (Left) -->
+    <div class="highlight-item">
+      <div class="highlight-box">
+        <div class="image-container" onclick="openModal('images/hero-bg.png')">
+          <img src="images/hero-bg.png" alt="Regular Mock Tests" class="card-image">
+        </div>
+      </div>
+      <div class="highlight-info">
+        <h3>Regular Mock Tests</h3>
+        <p>Practice with regular mock tests and assessments.</p>
+      </div>
+    </div>
+  
+    <!-- Card 6 (Right) -->
+    <div class="highlight-item reverse">
+      
+      <div class="highlight-box">
+        <div class="image-container" onclick="openModal('images/hero-bg.png')">
+          <img src="images/hero-bg.png" alt="Parent-Teacher Meetings" class="card-image">
+        </div>
+      </div>
+      <div class="highlight-info">
+        <h3>Parent-Teacher Meetings</h3>
+        <p>Stay updated with your child's progress.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal for Zoomed Image -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>Bright Future Coaching is a leading institute in UP, providing quality education for students from classes 5th to 12th. Our mission is to empower students with knowledge and skills to achieve their dreams.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@brightfuturecoaching.com</p>
+        <p>Phone: +91 123 456 7890</p>
+        <p>Address: 123 Main Street, Lucknow, UP, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Bright Future Coaching. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
