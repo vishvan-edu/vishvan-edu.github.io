@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Vishvan Educational Society</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Vishvan Educational Society</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/Vishvan.ico">
+    <!-- Font Awesome for Hamburger Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
 <body>
   <header>
-    <a href="index.html" class="logo">Vishvan Educational Society</a>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="about.html">About Us</a>
-            <ul class="dropdown">
-              <li><a href="about.html#mission">Our Mission</a></li>
-              <li><a href="about.html#team">Our Team</a></li>
-              <li><a href="about.html#history">Our History</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="services.html">Services</a>
-            <ul class="dropdown">
-              <li><a href="services.html#5th-8th">Classes 5th to 8th</a></li>
-              <li><a href="services.html#9th-10th">Classes 9th to 10th</a></li>
-              <li><a href="services.html#11th-12th">Classes 11th to 12th</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="courses.html">Courses</a>
-            <ul class="dropdown">
-              <li><a href="courses.html#math">Mathematics</a></li>
-              <li><a href="courses.html#science">Science</a></li>
-              <li><a href="courses.html#english">English</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+    <a href="index.html" class="logo">
+      <img src="images/Vishvan.ico" alt="Vishvan Educational Society Logo" class="logo-image">
+      <span class="logo-text">Vishvan Educational Society</span>
+    </a>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    
+    <!-- Navigation Menu -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about.html">About Us</a>
+          <ul class="dropdown">
+            <li><a href="about.html#mission">Our Mission</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="about.html#history">Our History</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="services.html#5th-8th">Classes 5th to 8th</a></li>
+            <li><a href="services.html#9th-10th">Classes 9th to 10th</a></li>
+            <li><a href="services.html#11th-12th">Classes 11th to 12th</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="courses.html">Courses</a>
+          <ul class="dropdown">
+            <li><a href="courses.html#math">JEE</a></li>
+            <li><a href="courses.html#science">NEET</a></li>
+            <li><a href="courses.html#english">CBSE Boards</a></li>
+            <li><a href="courses.html#english">UP Boards</a></li>
+            <li><a href="courses.html#english">ICSE Boards</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="services">
